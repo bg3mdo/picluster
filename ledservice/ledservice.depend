@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1565135536 source:/home/pi/Desktop/ledservice/main.c
+	"gpiolib.h"
+
+1565046703 source:/home/pi/Desktop/ledservice/gpiolib.c
+	"gpiolib.h"
+
+1565134409 /home/pi/Desktop/ledservice/gpiolib.h
+	<sys/stat.h>
+	<sys/types.h>
+	<fcntl.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<errno.h>
+	<sys/signal.h>
+
