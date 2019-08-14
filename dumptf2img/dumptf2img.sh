@@ -20,11 +20,9 @@
 #Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
 #Boston, MA  02110-1301, USA.
 
-echo "This is an image file to multiple TF cards clone tool V0.1"
+echo "This is a TF card image dump tool V0.1"
 echo "By Yuan Wang <bg3mdo@gmail.com>"
-echo "Syntax: sudo sh img2multitf.sh [image file path] [dev1] [dev2] ... [devN]"
-echo "[devX] will be like sdb, sdc ..."
-echo "Please handle this carefully, some card readers has more slots, more dev."
+echo "Syntax: sudo sh dumptf2img.sh [/dev/sdX] [image file (x.img) path]"
 echo ""
 
 if [ $# -eq 0 ]; then
@@ -38,51 +36,13 @@ if [ $# -eq 1 ]; then
 fi
 
 if [ ! -e $1 ]; then
-	echo "Image file is NOT found!"
+	echo "TF card is NOT found!"
 	exit 0
 fi
 
-echo "CAUTION: the following disk/s will be WIPED and WROTE:"
-
-i=2
-while [ $i -le $# ]; do
-	eval par=\$$i
-	echo $par
-	i=$(($i + 1))
-done
-
+echo "Starting to dump TF card $1 ..."
+dd if=$1 of=$2 bs=1M status=progress
+echo "Have completed TF card dump :)"
 echo ""
-
-read -r -p "Are you sure to process? [y/N] " response
-echo ""
-case "$response" in
-    [yY][eE][sS]|[yY]) 
-
-	i=2
-	while [ $i -le $# ]; do
-		eval par=\$$i
-		if [ ! -e "/dev/$par" ]; then
-			echo "Can NOT find /dev/$par"
-			echo "Exit the process."
-			exit 0
-		fi
-		i=$(($i + 1))
-	done
-
-       	echo "Start to process TF card/s."
-	echo ""
-	i=2
-	while [ $i -le $# ]; do
-		eval par=\$$i
-		echo "Starting to burn TF card $par ..."
-		dd if=$1 of=/dev/$par bs=1M status=progress
-		echo "Have completed TF card $par :)"
-		i=$(($i + 1))
-	done
-        ;;
-    *)
-        echo "Exit the process."
-        ;;
-esac
-
-
+echo "Image is stored at $2"
+echo "Exit the process."
