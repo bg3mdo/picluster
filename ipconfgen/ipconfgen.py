@@ -1,7 +1,7 @@
 import os
 import shutil
 
-#Raspberry Pi Cluster IP/hostname Generator Tool- ipconfgen V1.0
+#Raspberry Pi Cluster IP/hostname Generator Tool- ipconfgen V0.1
 #Created by Yuan Wang <bg3mdo@gmail.com>
 #
 #Copyright (C) 2019 by Yuan Wang BG3MDO
