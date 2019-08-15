@@ -1,6 +1,6 @@
 # picluster
 
-# UH Pi Cluster Image Deployment Tools Repository
+# Pi Cluster Image Deployment Tools Repository
 
 **ifconfgen** is used to generate ip configure and hostname files for Raspberry Pi, in Python.
 
