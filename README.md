@@ -1,8 +1,8 @@
 # picluster
 
-# UH Pi Cluster Image Deployment Tools Repository
+# Pi Cluster Image Deployment Tools Repository
 
-**ifconfgen** is used to generate ip configure and hostname files for Raspberry Pi, in Python
+**ifconfgen** is used to generate ip configure and hostname files for Raspberry Pi, in Python.
 
 **ledservice** is a debug LED control program, Pi HAT schematic is under schematic, in C for speed optimisation. 
 
@@ -12,9 +12,10 @@
 
 **dumptf2img** is used to dump a TF card to TF card image file, in shell script, then the image can be compressed by **pishrink** for smaller size.
 
-**ipconf2tf** is an automatic IP/Hostname preparation tool for individual TF card.
+**ipconf2tf** is an automatic IP/Hostname preparation tool for individual TF card, in Python.
 
 **schematic** contains a Raspberry Pi power supply HAT schematic, in PDF format. 
+
 
 
 By **Yuan Wang BG3MDO**, Under GNU GPL.
