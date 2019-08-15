@@ -20,7 +20,7 @@
 #Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
 #Boston, MA  02110-1301, USA.
 
-echo "This is an image file to multiple TF cards clone tool V0.1"
+echo "TF Card Image File to Multiple TF Cards Clone Tool V0.1"
 echo "By Yuan Wang <bg3mdo@gmail.com>"
 echo "Syntax: sudo sh img2multitf.sh [image file path] [dev1] [dev2] ... [devN]"
 echo "[devX] will be like sdb, sdc ..."
@@ -53,7 +53,7 @@ done
 
 echo ""
 
-read -r -p "Are you sure to process? [y/N] " response
+read -r -p "Do you want to continue? [y/N] " response
 echo ""
 case "$response" in
     [yY][eE][sS]|[yY]) 

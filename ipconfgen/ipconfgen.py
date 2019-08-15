@@ -36,7 +36,7 @@ node_dns2 = ""
 confs_folder = "confs"
 confs_abspath = script_path + "/" + confs_folder
 
-print("Raspberry Pi Cluster IP/hostname Generator Tool- ipconfgen V1.0")
+print("Raspberry Pi Cluster IP/Hostname Generator - ipconfgen V0.1")
 print("Created by Yuan Wang <bg3mdo@gmail.com>")
 print("Under GNU Library General Public License.")
 print("")

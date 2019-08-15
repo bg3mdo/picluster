@@ -20,7 +20,7 @@
 #Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
 #Boston, MA  02110-1301, USA.
 
-echo "This is a TF card image dump tool V0.1"
+echo "TF Card Image Dump Tool V0.1"
 echo "By Yuan Wang <bg3mdo@gmail.com>"
 echo "Syntax: sudo sh dumptf2img.sh [/dev/sdX] [image file (x.img) path]"
 echo ""
