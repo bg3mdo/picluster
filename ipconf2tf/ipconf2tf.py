@@ -124,3 +124,5 @@ for i in range(int(stindex), int(endindex) + 1):
     print("Now remove current card and insert next card if you need to process more cards.")
 
 print("All job done :)")
+
+
