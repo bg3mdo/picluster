@@ -12,6 +12,8 @@
 
 **dumptf2img** is used to dump a TF card to TF card image file, in shell script, then the image can be compressed by **pishrink** for smaller size.
 
+**ipconf2tf** is an automatic IP/Hostname preparation tool for individual TF card.
+
 **schematic** contains a Raspberry Pi power supply HAT schematic, in PDF format. 
 
 
