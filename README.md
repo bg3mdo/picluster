@@ -16,6 +16,4 @@
 
 **schematic** contains a Raspberry Pi power supply HAT schematic, in PDF format. 
 
-
-
 By **Yuan Wang BG3MDO**, Under GNU GPL.
