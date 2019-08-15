@@ -51,7 +51,6 @@ if not yn_choice('\nDo you want to continue?'):
     exit()
 
 tfpath = raw_input("\nPlease give the TF card path, e.g. /dev/sdb: ")
-tfpath = "/dev/sdb"
 print("You entered TF card path is: " + tfpath);
 if not yn_choice('\nDo you want to continue?'):
     exit()
