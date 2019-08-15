@@ -23,7 +23,7 @@ import shutil
 
 script_path = os.path.dirname(os.path.abspath( __file__ ))
 
-host_name = "pifarm_c"
+host_name = "pifarmc"
 node_name_st_no = 1
 node_no = 25
 node_st_ip = 10

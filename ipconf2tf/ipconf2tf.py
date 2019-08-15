@@ -59,9 +59,8 @@ if not yn_choice('\nDo you want to continue?'):
 sudopass = getpass.getpass("\nPlease give your sudo password: ")
 
 confpath = raw_input("\nPlease providing 'conf' files folder name, e.g. confs: ")
-nameprefix = raw_input("Please providing hostname prefix, e.g. pifarm_c: ")
-confpath = "confs"
-nameprefix = "pifarm_c"
+nameprefix = raw_input("Please providing hostname prefix, e.g. pifarmc: ")
+
 subdirs = [x[0] for x in os.walk('.')]
 confsubdir = []
 confsubdirnum = 0
@@ -105,7 +104,7 @@ for i in range(int(stindex), int(endindex) + 1):
     cpyipcmd = "sudo cp " + script_path + confsubdir[i - 1][1:] + "/dhcpcd.conf /mnt/tf/etc"
     cpyhostcmd = "sudo cp " + script_path + confsubdir[i - 1][1:] + "/hostname /mnt/tf/etc"
     print("\nIMPORTANT: Inserting the target TF card to card reader and plug into USB.")
-    print("IMPORTANT: Wait your Linux OS recognise the card.")
+    print("IMPORTANT: Wait for your Linux OS recognise the card.")
     if not yn_choice('Card reader read/write LED is not blinking?'):
         exit()
     print("Copying '" + confsubdir[i-1] + "' configuration files to TF card...")
