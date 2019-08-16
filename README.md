@@ -16,4 +16,6 @@
 
 **schematic** contains a Raspberry Pi power supply HAT schematic, in PDF format. 
 
+**sshkeymap** is used to assign a master SSH public key to cluster node, then master no password needed to log in nodes, in shell script. 
+
 By **Yuan Wang BG3MDO**, Under GNU GPL.
