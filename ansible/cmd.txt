@@ -1,0 +1,19 @@
+ansible pifarm_collection -B 3600 -P 0 -a "/home/pi/picluster/bin/ledservice -fc" -b
+ansible pifarm_collection -B 3600 -P 0 -a "/home/pi/picluster/bin/ledservice -fb1" -b
+ansible pifarm_collection -B 3600 -P 0 -a "/home/pi/picluster/bin/ledservice -off" -b
+ansible pifarm_collection -a "reboot" -b
+ansible pifarm_collection -m ping
+
+
+led service para:
+-h      Print this message.
+-d1     Turn on DEBUG 1 LED.
+-d2     Turn on DEBUG 2 LED.
+-sb1    Slow blink DEBUG 1 LED.
+-sb2    Slow blink DEBUG 2 LED.
+-fb1    Fast blink DEBUG 1 LED.
+-fb2    Fast blink DEBUG 2 LED.
+-sc     Slow blink between DEBUG LEDs.
+-fc     Fast blink between DEBUG LEDs.
+-off    Turn off all DEBUG LEDs.
+
